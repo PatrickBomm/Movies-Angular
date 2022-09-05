@@ -1,0 +1,8 @@
+<div routerLink="/movie/{{movie.imdbID}}" [state]="{ movie:movie }" class="col-12 cursor-pointer scale">
+    <div class="movie-cover mt-4 position-relative ">
+        <img class="shadow-sm poster" [alt]="movie.Title" src="{{movie.Poster}}">
+    </div>
+    <p class="movie-title text-center">
+        {{movie.Title}}
+    </p>
+</div>
